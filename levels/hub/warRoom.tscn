@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=4 uid="uid://odolbiaik0ge"]
+[gd_scene load_steps=3 format=4 uid="uid://dhxnywxu6j3eq"]
 
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_lj3i8"]
-[ext_resource type="PackedScene" uid="uid://d13a8837xjqmn" path="res://Items/keypad.tscn" id="2_4sxmc"]
+[ext_resource type="PackedScene" path="res://Items/keypad.tscn" id="2_4sxmc"]
 
 [node name="WarRoom" type="Node2D"]
 
