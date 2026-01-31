@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0bxqx22wsu5i"
-path="res://.godot/imported/keypad_sprite_16x16.png-f66014217eb1d195eeaa2c35689c2f3f.ctex"
+uid="uid://crkew8xbugu2n"
+path="res://.godot/imported/Conquest_Mask.webp-8f065282e8eef8277130de45061cdb80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Items/keypad_sprite_16x16.png"
-dest_files=["res://.godot/imported/keypad_sprite_16x16.png-f66014217eb1d195eeaa2c35689c2f3f.ctex"]
+source_file="res://textures/Conquest_Mask.webp"
+dest_files=["res://.godot/imported/Conquest_Mask.webp-8f065282e8eef8277130de45061cdb80.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cr3b2cwlk0y7h"
-path="res://.godot/imported/Interiors_free_32x32.png-74af79ae900ca3fc7edd34c96f79759b.ctex"
+uid="uid://cjocwowqq1w2o"
+path="res://.godot/imported/Gold_frame.webp-0e9d207733599eb6a59c28e0baa32de5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/hub/Interiors_free_32x32.png"
-dest_files=["res://.godot/imported/Interiors_free_32x32.png-74af79ae900ca3fc7edd34c96f79759b.ctex"]
+source_file="res://textures/Gold_frame.webp"
+dest_files=["res://.godot/imported/Gold_frame.webp-0e9d207733599eb6a59c28e0baa32de5.ctex"]
 
 [params]
 

@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://wi0nlsuyvwsy"]
+
+[ext_resource type="Texture2D" uid="uid://bhqkrjjsrphxk" path="res://textures/grey_frame.webp" id="1_wtwkl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wtwkl"]
+size = Vector2(80, 32)
+
+[node name="SwordPosters" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(32, 0)
+shape = SubResource("RectangleShape2D_wtwkl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_repeat = 1
+texture = ExtResource("1_wtwkl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_repeat = 1
+position = Vector2(64, 0)
+texture = ExtResource("1_wtwkl")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+texture_repeat = 1
+position = Vector2(48, 0)
+texture = ExtResource("1_wtwkl")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+texture_repeat = 1
+position = Vector2(32, 0)
+texture = ExtResource("1_wtwkl")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+texture_repeat = 1
+position = Vector2(16, 0)
+texture = ExtResource("1_wtwkl")
