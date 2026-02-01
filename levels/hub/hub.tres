@@ -191,6 +191,7 @@ use_texture_padding = false
 30:6/0 = 0
 31:6/0 = 0
 32:6/0 = 0
+32:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 33:6/0 = 0
 6:7/0 = 0
 7:7/0 = 0
