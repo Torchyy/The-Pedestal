@@ -1,14 +1,20 @@
-[gd_scene load_steps=8 format=4 uid="uid://dlwqsyx5p8705"]
+[gd_scene load_steps=13 format=4 uid="uid://dlwqsyx5p8705"]
 
+[ext_resource type="Script" uid="uid://d2kwbsu5qmee3" path="res://levels/conquest/conquest_room.gd" id="1_2b8ee"]
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_wfomy"]
 [ext_resource type="PackedScene" uid="uid://biuhyqq6cpri7" path="res://Items/target.tscn" id="2_r2fdh"]
 [ext_resource type="PackedScene" uid="uid://dhywcah30b2qf" path="res://Items/bow.tscn" id="3_2b8ee"]
 [ext_resource type="PackedScene" uid="uid://bth6xu8a8qdv8" path="res://Items/arrow.tscn" id="4_ranu8"]
-[ext_resource type="Texture2D" uid="uid://crkew8xbugu2n" path="res://textures/Conquest_Mask.webp" id="5_xuata"]
 [ext_resource type="PackedScene" uid="uid://daqkx8rt5iob0" path="res://Items/mask_case.tscn" id="6_2yig4"]
+[ext_resource type="PackedScene" path="res://Items/conquest_mask.tscn" id="6_n7fwv"]
 [ext_resource type="PackedScene" uid="uid://jdse76o0luqg" path="res://Items/keypad.tscn" id="7_n7fwv"]
+[ext_resource type="Texture2D" uid="uid://hnbasjagovqk" path="res://textures/2_notches_lodged_arrow.png" id="9_n7fwv"]
+[ext_resource type="Texture2D" uid="uid://w4breqvhpvge" path="res://textures/3_notches_lodged_arrow_32x32.png" id="10_c7p2f"]
+[ext_resource type="Texture2D" uid="uid://cj71lm7btsrx2" path="res://textures/1_notch_lodged_arrow.png" id="11_idudy"]
+[ext_resource type="Texture2D" uid="uid://bx0yu3bqb5l4b" path="res://textures/4_notches_lodged_arrow_32x32.png" id="12_k6kkv"]
 
 [node name="ConquestRoom" type="Node2D"]
+script = ExtResource("1_2b8ee")
 
 [node name="Tiles" type="Node2D" parent="."]
 
@@ -33,7 +39,7 @@ tile_map_data = PackedByteArray("AAAAAAAABAAMAAQAAAATAAAABAALAAQAAAABAAAABAANAAI
 tile_set = ExtResource("1_wfomy")
 
 [node name="target" parent="." instance=ExtResource("2_r2fdh")]
-position = Vector2(42, 44)
+position = Vector2(216, 44)
 
 [node name="target2" parent="." instance=ExtResource("2_r2fdh")]
 position = Vector2(83, 44)
@@ -45,27 +51,38 @@ position = Vector2(126, 44)
 position = Vector2(170, 44)
 
 [node name="Bow" parent="." instance=ExtResource("3_2b8ee")]
-position = Vector2(283, 143)
+position = Vector2(287, 75)
 
 [node name="Arrow" parent="." instance=ExtResource("4_ranu8")]
 position = Vector2(36, 141)
 
 [node name="Arrow2" parent="." instance=ExtResource("4_ranu8")]
-position = Vector2(83, 107)
+position = Vector2(283, 104)
 
 [node name="Arrow3" parent="." instance=ExtResource("4_ranu8")]
-position = Vector2(136, 136)
+position = Vector2(253, 71)
 
-[node name="Arrow4" parent="." instance=ExtResource("4_ranu8")]
-position = Vector2(181, 105)
-
-[node name="ConquestMask" type="Sprite2D" parent="."]
-position = Vector2(237, 120)
-scale = Vector2(2, 2)
-texture = ExtResource("5_xuata")
+[node name="ConquestMask" parent="." instance=ExtResource("6_n7fwv")]
+position = Vector2(238, 122)
 
 [node name="MaskCase" parent="." instance=ExtResource("6_2yig4")]
 position = Vector2(239, 119)
 
 [node name="Keypad" parent="." instance=ExtResource("7_n7fwv")]
-position = Vector2(281, 44)
+position = Vector2(36, 44)
+
+[node name="2NotchesLodgedArrow" type="Sprite2D" parent="."]
+position = Vector2(83, 60)
+texture = ExtResource("9_n7fwv")
+
+[node name="3NotchesLodgedArrow32x32" type="Sprite2D" parent="."]
+position = Vector2(127, 59)
+texture = ExtResource("10_c7p2f")
+
+[node name="1NotchLodgedArrow" type="Sprite2D" parent="."]
+position = Vector2(171, 60)
+texture = ExtResource("11_idudy")
+
+[node name="4NotchesLodgedArrow32x32" type="Sprite2D" parent="."]
+position = Vector2(217, 59)
+texture = ExtResource("12_k6kkv")
