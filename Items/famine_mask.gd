@@ -1,5 +1,9 @@
 class_name FamineMask extends Mask
 
+func _ready() -> void:
+	monitorable = true
+	
+
 func execute() -> void:
 	if PlayerStats.famineDone:
 		return
