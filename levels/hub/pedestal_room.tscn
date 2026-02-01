@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=4 uid="uid://cwsglvnpcaiwi"]
+[gd_scene load_steps=6 format=4 uid="uid://cwsglvnpcaiwi"]
 
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_1ebny"]
-[ext_resource type="PackedScene" uid="uid://ct7ftpqctbyix" path="res://Player/player.tscn" id="2_fdc8u"]
 [ext_resource type="Texture2D" uid="uid://b4fb8yrtobc16" path="res://textures/Head_Pillars_48x24.webp" id="2_xvti3"]
 [ext_resource type="Script" uid="uid://noarr8kwoesf" path="res://levels/hub/pedestal.gd" id="4_fdc8u"]
 
@@ -13,9 +12,6 @@ size = Vector2(92, 12)
 
 [node name="pedestalRoom" type="Node2D"]
 y_sort_enabled = true
-
-[node name="Player" parent="." instance=ExtResource("2_fdc8u")]
-position = Vector2(88, 85)
 
 [node name="Tiles" type="Node2D" parent="."]
 position = Vector2(-3, -15)
