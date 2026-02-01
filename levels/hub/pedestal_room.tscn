@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=4 uid="uid://u4vkifwd2ybm"]
+[gd_scene load_steps=4 format=4 uid="uid://cwsglvnpcaiwi"]
 
 [ext_resource type="TileSet" uid="uid://0g7pxawmxdv4" path="res://levels/hub/hub.tres" id="1_1ebny"]
+[ext_resource type="PackedScene" uid="uid://ct7ftpqctbyix" path="res://Player/player.tscn" id="2_fdc8u"]
 [ext_resource type="Texture2D" uid="uid://b4fb8yrtobc16" path="res://textures/Head_Pillars_48x24.webp" id="2_xvti3"]
 
 [node name="pedestalRoom" type="Node2D"]
@@ -33,3 +34,6 @@ texture = ExtResource("2_xvti3")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pedestal/Area2D"]
 visible = false
 polygon = PackedVector2Array(2, -1, -5, -1, -20, 0, -23, 7, -23, 12, 23, 12, 23, 7, 21, 1, 11, 0)
+
+[node name="Player" parent="pedestal/Area2D" instance=ExtResource("2_fdc8u")]
+position = Vector2(-68, -7)
