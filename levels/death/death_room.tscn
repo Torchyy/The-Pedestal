@@ -57,7 +57,7 @@ position = Vector2(-26, 11)
 texture = ExtResource("3_7x0bf")
 
 [node name="Keypad" parent="." instance=ExtResource("5_ps0s8")]
-position = Vector2(124, 42)
+position = Vector2(115, 39)
 
 [node name="Player" parent="." instance=ExtResource("6_ps0s8")]
 position = Vector2(158, 103)
