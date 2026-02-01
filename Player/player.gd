@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 135.0
+const SPEED = 90.0
 
 @export var AnimPlayer : AnimationPlayer
 @export var InteractArea : Area2D
