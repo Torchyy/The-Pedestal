@@ -11,3 +11,6 @@ func _on_LineEdit_text_entered(new_text: String) -> void:
 	code_entered.emit(new_text)
 	line_edit.clear()
 	hide()
+
+func on_display() -> void:
+	line_edit.on_display()

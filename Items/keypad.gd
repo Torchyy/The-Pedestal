@@ -19,6 +19,7 @@ func _ready():
 	
 func execute() -> void:
 	input_modal.show()
+	input_modal.on_display()
 	
 	print("OPEN MODAL")
 
