@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://daqkx8rt5iob0"]
+[gd_scene load_steps=5 format=3 uid="uid://daqkx8rt5iob0"]
 
-[ext_resource type="Script" path="res://Items/mask_case.gd" id="1_ilvey"]
+[ext_resource type="Script" uid="uid://dxyjiil7arbf6" path="res://Items/mask_case.gd" id="1_ilvey"]
 [ext_resource type="Texture2D" uid="uid://07m8km2irvx1" path="res://textures/Mask_Case.webp" id="1_k7dcx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ilvey"]
 size = Vector2(30, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cxgdq"]
+size = Vector2(30, 14)
 
 [node name="MaskCase" type="Node2D"]
 
@@ -20,3 +23,9 @@ shape = SubResource("RectangleShape2D_ilvey")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
 texture = ExtResource("1_k7dcx")
+
+[node name="Hitbox" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(-1, 25)
+shape = SubResource("RectangleShape2D_cxgdq")
