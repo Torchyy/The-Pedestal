@@ -25,11 +25,11 @@ tile_set = ExtResource("1_ypmtf")
 [node name="CeilingLayer" type="TileMapLayer" parent="tiles/floorLayer/wallLayer"]
 tile_set = ExtResource("1_ypmtf")
 
-[node name="Keypad" parent="." instance=ExtResource("2_4t7k5")]
-position = Vector2(72, 44)
-
 [node name="SwordSolution" parent="." instance=ExtResource("3_8rih5")]
 position = Vector2(112, 44)
+
+[node name="Keypad" parent="." instance=ExtResource("2_4t7k5")]
+position = Vector2(70.1872, 47.9583)
 
 [node name="SwordPosters" parent="." instance=ExtResource("5_jgs7f")]
 z_index = 1
