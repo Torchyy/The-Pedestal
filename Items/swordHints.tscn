@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bwl05ykqv740i"]
+[gd_scene load_steps=3 format=3 uid="uid://bwl05ykqv740i"]
 
 [ext_resource type="Texture2D" uid="uid://gtgir7p4w7cq" path="res://textures/sword gui.png" id="1_owwn7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_owwn7"]
+font_size = 7
 
 [node name="SwordHints" type="Node2D"]
 
@@ -8,6 +11,9 @@
 texture = ExtResource("1_owwn7")
 
 [node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = -36.0
+offset_top = 7.0
+offset_right = 4.0
+offset_bottom = 30.0
 text = "big sword"
+label_settings = SubResource("LabelSettings_owwn7")
