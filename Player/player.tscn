@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://ct7ftpqctbyix"]
+[gd_scene format=3 uid="uid://ct7ftpqctbyix"]
 
 [ext_resource type="Script" uid="uid://61o5aieh8nms" path="res://Player/player.gd" id="1_l8h54"]
 [ext_resource type="Texture2D" uid="uid://wdugf2vvobai" path="res://Player/Character_Sprite_Sheet_224X544.png" id="2_4ntmi"]
@@ -619,7 +619,7 @@ height = 12.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oul6g"]
 size = Vector2(12.5, 9)
 
-[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("AnimPlayer", "InteractArea")]
+[node name="Player" type="CharacterBody2D" unique_id=1726214791 node_paths=PackedStringArray("AnimPlayer", "InteractArea")]
 z_index = 1
 collision_layer = 2
 motion_mode = 1
@@ -627,33 +627,31 @@ script = ExtResource("1_l8h54")
 AnimPlayer = NodePath("AnimationPlayer")
 InteractArea = NodePath("Interact")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1912156828]
 texture = ExtResource("2_4ntmi")
 hframes = 7
 vframes = 17
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_gwnis")
-}
-autoplay = "idle_down"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=269741904]
+libraries/ = SubResource("AnimationLibrary_gwnis")
+autoplay = &"idle_down"
 
-[node name="Hitbox" type="CollisionShape2D" parent="."]
+[node name="Hitbox" type="CollisionShape2D" parent="." unique_id=611189628]
 position = Vector2(0, 14)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_k53q1")
 debug_color = Color(0.915359, 0.274302, 0.241947, 0.42)
 
-[node name="Interact" type="Area2D" parent="."]
+[node name="Interact" type="Area2D" parent="." unique_id=1948255419]
 collision_layer = 0
 collision_mask = 4
 input_pickable = false
 monitorable = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Interact"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interact" unique_id=1609318070]
 position = Vector2(0, -6)
 shape = SubResource("RectangleShape2D_oul6g")
 debug_color = Color(0, 0.64239, 0.318556, 0.42)
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=621393571]
 stream = ExtResource("3_btcbx")

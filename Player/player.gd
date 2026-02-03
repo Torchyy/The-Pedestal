@@ -32,16 +32,16 @@ func _physics_process(_delta: float) -> void:
 		
 
 func handle_animations():
-	if Input.is_action_pressed("up"):
+	if velocity.y < 0:
 		AnimPlayer.play("walk_up")
 		last_dir = "up"
-	elif Input.is_action_pressed("down"):
+	elif velocity.y > 0:
 		AnimPlayer.play("walk_down")
 		last_dir = "down"
-	elif Input.is_action_pressed("left"):
+	elif velocity.x < 0:
 		AnimPlayer.play("walk_left")
 		last_dir = "left"
-	elif Input.is_action_pressed("right"):
+	elif velocity.x > 0:
 		AnimPlayer.play("walk_right")
 		last_dir = "right"
 	else:

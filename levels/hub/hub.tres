@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://0g7pxawmxdv4"]
+[gd_resource type="TileSet" format=3 uid="uid://0g7pxawmxdv4"]
 
 [ext_resource type="Texture2D" uid="uid://cuabvpmvhqsfv" path="res://textures/Room_Builder_free_32x32.webp" id="1_uhkwg"]
 [ext_resource type="Texture2D" uid="uid://ue4qkurxqrhi" path="res://textures/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/32x32/Room_Builder_free_32x32.png" id="2_uhkwg"]
